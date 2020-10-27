@@ -11,7 +11,8 @@ describe("ACE Editor tests", function () {
 
     it("- test", function (done) {
         jsTest.onPage(function() {
-            var $ = require('jquery-detached').getJQuery();
+            var $ = require('jquery');
+
             var ace = require("../js/index.js");
             var editor = ace.edit('the-editor', 'groovy', 'eclipse');
             
